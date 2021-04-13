@@ -1,1 +1,23 @@
-<p>login works!</p>
+
+<label>
+  UserName:
+  <input type="text" placeholder="Username" [disabled]="disablelogin" #user (keyup)="onsavetext($event.target.value)"
+    (blur)="onsaveblur($event.target.value)">
+</label>
+<br><br>
+<label>
+  Password:
+  <input type="password" placeholder="password" #password [disabled]="disablelogin"
+    (keyup)="onsavetext($event.target.value)" (blur)="onsaveblur($event.target.value)">
+</label>
+
+<br><br>
+
+<button type="submit" (click)="onlogin(user.value)">Login</button>&nbsp;
+
+
+<button *ngIf="showlogout else elseblock" type="submit" (click)="onlogout(user.value)">Logout</button>
+
+<ng-template #elseblock>
+  <h1>{{fulname}}</h1>
+</ng-template>

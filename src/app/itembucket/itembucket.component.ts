@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import{FormControl} from '@angular/forms'
 
 @Component({
   selector: 'app-itembucket',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./itembucket.component.css']
 })
 export class ItembucketComponent implements OnInit {
+  myreactive= new FormControl('');
 
   constructor() { }
 

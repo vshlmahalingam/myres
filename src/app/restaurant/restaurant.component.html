@@ -1,1 +1,31 @@
-<p>restaurant works!</p>
+
+
+<!-- <button (click)="getoffer(popname)">Click to View Restaurant Offers</button> -->
+
+<!-- <div *ngFor="let mydata of data" style="display: flex;" >
+    <h1>{{mydata.name}}</h1>&nbsp;&nbsp;&nbsp;<h1>{{mydata.place}}</h1>
+
+</div> -->
+
+
+
+
+<table border="1">
+    <tr>
+        <th>Name</th>   
+             <th>Place</th>
+
+    </tr>
+    <tr *ngFor="let mydata of data">
+        <td>{{mydata.name}}</td>
+        <td>{{mydata.place}}</td>
+
+    </tr>
+</table>
+<br>
+<br>
+<div class="container">
+    <div class="center">
+        <button routerLink='/dashboard' >Home</button>
+    </div>
+  </div>

@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ItembucketRoutingModule } from './itembucket-routing.module';
 import { ItembucketComponent } from './itembucket.component';
 
+import {ReactiveFormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -11,7 +12,10 @@ import { ItembucketComponent } from './itembucket.component';
   ],
   imports: [
     CommonModule,
-    ItembucketRoutingModule
+    ItembucketRoutingModule,
+    ReactiveFormsModule
   ]
 })
-export class ItembucketModule { }
+export class ItembucketModule { 
+
+}

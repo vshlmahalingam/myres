@@ -11,5 +11,13 @@ export class RestaurantComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  popname ='dhoni';
+  data=[{name:'copper kitchen',place:'chennai'},
+  {name:'SS hydrabad',place:'chennai'},
+  {name:'Ambur ',place:'chennai'},
+  {name:'Salem RR',place:'chennai'}];
+  getoffer(name :any){
+    alert('welcome to!' + name);
+  }
 
 }

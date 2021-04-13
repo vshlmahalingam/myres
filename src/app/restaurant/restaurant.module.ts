@@ -12,6 +12,9 @@ import { RestaurantComponent } from './restaurant.component';
   imports: [
     CommonModule,
     RestaurantRoutingModule
+  ],
+  exports:[
+    RestaurantComponent
   ]
 })
 export class RestaurantModule { }

@@ -35,7 +35,11 @@
 <div style="display: block;">
     <div *ngFor="let res of allrestaurant">
         <div class="subone">
+
             <img alt={{res.name}} width="254" height="160" src="https://www.seriouseats.com/images/2015/06/20150602-five-grilled-chickens-01.JPG">
+            <label #resname>{{res.name}}</label>
+            <!-- <app-restaurantdetails [resdetail]="resname" routerLink='/restaurant/restaurantdetails'></app-restaurantdetails> -->
+            <button [resdetail]="resname" mat-raised-button color="warn" (click)="getdetails(resname)">Details</button>
         </div>
     </div>
 </div>

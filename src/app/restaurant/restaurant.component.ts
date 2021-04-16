@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
+import {Router} from '@angular/router'
 
 @Component({
   selector: 'app-restaurant',
@@ -7,11 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RestaurantComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
   err=true;
   getvalues(val){
     alert(val);
 
+  }
+  getdetails(resname){
+   // console.log(resname)
+    this.router.navigate(['restaurant/restaurantdetails'], { state: { example: resname.innerText }});
+   // this.router.navigate(['/dashboard']);
   }
   info=[{priority:"5",time:"testme"},
   {priority:"15",time:"testme"},

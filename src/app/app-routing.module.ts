@@ -7,7 +7,8 @@ const routes: Routes = [{ path: '', loadChildren: () => import('./login/login.mo
  { path: 'offers', loadChildren: () => import('./offers/offers.module').then(m => m.OffersModule) }, 
  { path: 'Itembucket', loadChildren: () => import('./itembucket/itembucket.module').then(m => m.ItembucketModule) },
  { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) },
- { path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) }];
+ { path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) },
+ { path: 'Feedback', loadChildren: () => import('./feedback/feedback.module').then(m => m.FeedbackModule) }];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

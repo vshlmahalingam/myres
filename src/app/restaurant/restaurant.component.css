@@ -1,14 +1,30 @@
-.container { 
-    height: 200px;
-    position: relative;
-    border: 3px solid green; 
-  }
-  
-  .center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
+.MZy1T {
+    margin-bottom: 85px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.MZy1T:last-child {
+    margin-bottom: 0;
+    padding-bottom: 80px
+}
+
+.subone {
+    width: 300px;
+    float: left;
+    margin-bottom: 85px;
+}
+
+.error {
+    color: red;
+}
+
+.warn {
+    color: orange;
+}
+
+.message {
+    color: green;
+}

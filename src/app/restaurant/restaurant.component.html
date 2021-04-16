@@ -1,3 +1,12 @@
+<!-- <form #searchform="ngForm" (ngSubmit)="getvalues(searchform.value)">
+    <input type="text" ngModel name="RestaurantName" placeholder="RestaurantName">
+    <br><br>
+    <input type="text" ngModel name="RestaurantPlace" placeholder="RestaurantPlace">
+    <br><br>
+
+    <button>search</button>&nbsp;
+</form> -->
+
 
 
 <!-- <button (click)="getoffer(popname)">Click to View Restaurant Offers</button> -->
@@ -6,14 +15,36 @@
     <h1>{{mydata.name}}</h1>&nbsp;&nbsp;&nbsp;<h1>{{mydata.place}}</h1>
 
 </div> -->
+<div *ngFor="let myinfo of info">
+    <div [ngClass]="getClass(myinfo.priority)">
+        {{myinfo.time}}
+    </div>
+</div>
+
+<p>
+    <ngb-alert [dismissible]="false">
+        <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </ngb-alert>
+</p>
+
+<div *ngFor="let myinfo of info">
+
+    <p [style.background-color]="myinfo.priority>10 ? 'red':'yellow'">testtttttttt</p>
+</div>
+
+<div style="display: block;">
+    <div *ngFor="let res of allrestaurant">
+        <div class="subone">
+            <img alt={{res.name}} width="254" height="160" src="https://www.seriouseats.com/images/2015/06/20150602-five-grilled-chickens-01.JPG">
+        </div>
+    </div>
+</div>
 
 
-
-
-<table border="1">
+<!-- <table border="1">
     <tr>
-        <th>Name</th>   
-             <th>Place</th>
+        <th>Name</th>
+        <th>Place</th>
 
     </tr>
     <tr *ngFor="let mydata of data">
@@ -26,6 +57,6 @@
 <br>
 <div class="container">
     <div class="center">
-        <button routerLink='/dashboard' >Home</button>
+        <button routerLink='/dashboard'>Home</button>
     </div>
-  </div>
+</div> -->

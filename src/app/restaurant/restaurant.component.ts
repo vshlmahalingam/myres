@@ -38,17 +38,17 @@ getClass(priority){
   popname ='dhoni';
 
   allrestaurant=[
-{name:"aaa",price:"350 for 2",offer:"20%",time:"30mins"},
-{name:"bbb",price:"350 for 2",offer:"20%",time:"30mins"},
-{name:"ccc",price:"350 for 2",offer:"20%",time:"30mins"},
-{name:"ddd",price:"350 for 2",offer:"20%",time:"30mins"},
-{name:"ddd",price:"350 for 2",offer:"20%",time:"30mins"},
-{name:"ddd",price:"350 for 2",offer:"20%",time:"30mins"},
-{name:"ddd",price:"350 for 2",offer:"20%",time:"30mins"},
+{name:"Cooper kitchen",price:"350 for 2",offer:"20%",time:"30mins"},
+{name:"Oh oh restuarant",price:"350 for 2",offer:"20%",time:"30mins"},
+{name:"Awwoo restuarant",price:"350 for 2",offer:"20%",time:"30mins"},
+{name:"SS Hydrabad",price:"350 for 2",offer:"20%",time:"30mins"},
+{name:"Ambur",price:"350 for 2",offer:"20%",time:"30mins"},
+{name:"Salem RR",price:"350 for 2",offer:"20%",time:"30mins"},
+{name:"KMS",price:"350 for 2",offer:"20%",time:"30mins"},
 
-{name:"ddd",price:"350 for 2",offer:"20%",time:"30mins"},
+{name:"Toppi",price:"350 for 2",offer:"20%",time:"30mins"},
 
-{name:"eee",price:"350 for 2",offer:"20%",time:"30mins"}
+{name:"Buhari",price:"350 for 2",offer:"20%",time:"30mins"}
 
 
   ]

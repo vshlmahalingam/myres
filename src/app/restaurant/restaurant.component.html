@@ -15,29 +15,29 @@
     <h1>{{mydata.name}}</h1>&nbsp;&nbsp;&nbsp;<h1>{{mydata.place}}</h1>
 
 </div> -->
-<div *ngFor="let myinfo of info">
+<!-- <div *ngFor="let myinfo of info">
     <div [ngClass]="getClass(myinfo.priority)">
         {{myinfo.time}}
     </div>
-</div>
-
+</div> -->
+<!-- 
 <p>
     <ngb-alert [dismissible]="false">
         <strong>Warning!</strong> Better check yourself, you're not looking too good.
     </ngb-alert>
-</p>
+</p> -->
 
-<div *ngFor="let myinfo of info">
+<!-- <div *ngFor="let myinfo of info">
 
     <p [style.background-color]="myinfo.priority>10 ? 'red':'yellow'">testtttttttt</p>
-</div>
+</div> -->
 
-<div style="display: block;">
+<div style="display: block;height: 100%;">
     <div *ngFor="let res of allrestaurant">
         <div class="subone">
 
             <img alt={{res.name}} width="254" height="160" src="https://www.seriouseats.com/images/2015/06/20150602-five-grilled-chickens-01.JPG">
-            <label #resname>{{res.name}}</label>
+            <br><label #resname>{{res.name}}</label><br>
             <!-- <app-restaurantdetails [resdetail]="resname" routerLink='/restaurant/restaurantdetails'></app-restaurantdetails> -->
             <button [resdetail]="resname" mat-raised-button color="warn" (click)="getdetails(resname)">Details</button>
         </div>

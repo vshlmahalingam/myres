@@ -1,0 +1,30 @@
+.MZy1T {
+    margin-bottom: 85px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.MZy1T:last-child {
+    margin-bottom: 0;
+    padding-bottom: 80px
+}
+
+.subone {
+    width: 300px;
+    float: left;
+    margin-bottom: 85px;
+}
+
+.error {
+    color: red;
+}
+
+.warn {
+    color: orange;
+}
+
+.message {
+    color: green;
+}

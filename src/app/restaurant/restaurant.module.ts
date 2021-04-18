@@ -7,15 +7,19 @@ import { FormsModule } from '@angular/forms'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RestaurantdetailsComponent } from './restaurantdetails/restaurantdetails.component'
 import{MatButtonModule  } from '@angular/material/button'
+import{MatIconModule } from '@angular/material/icon';
+import { DishesComponent } from './dishes/dishes.component'
+
 
 @NgModule({
   declarations: [
     RestaurantComponent,
-    RestaurantdetailsComponent
+    RestaurantdetailsComponent,
+    DishesComponent
   ],
   imports: [
     CommonModule, FormsModule,
-    RestaurantRoutingModule, NgbModule,MatButtonModule
+    RestaurantRoutingModule, NgbModule,MatButtonModule,MatIconModule
   ],
   exports: [
     RestaurantComponent

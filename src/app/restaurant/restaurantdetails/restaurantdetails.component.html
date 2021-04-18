@@ -1,2 +1,10 @@
-<p>restaurantdetails works!</p>
-<h1>{{example}}</h1>
+<div class="subone">
+
+    <img alt={{hotel.name}} width="254" height="160" src="https://www.seriouseats.com/images/2015/06/20150602-five-grilled-chickens-01.JPG">
+    <br><label #resname>{{hotel.name}}</label><br>
+    <!-- <app-restaurantdetails [resdetail]="resname" routerLink='/restaurant/restaurantdetails'></app-restaurantdetails> -->
+    <button (click)="onorderclick(resname)" mat-mini-fab color="accent" aria-label="Example icon button with a plus icon">
+        <mat-icon>Add to cart</mat-icon>
+    </button>
+    <!-- <button [resdetail]="resname" mat-raised-button color="warn" (click)="getdetails(resname)">Details</button> -->
+</div>

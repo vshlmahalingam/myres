@@ -34,13 +34,7 @@
 
 <div style="display: block;height: 100%;">
     <div *ngFor="let res of allrestaurant">
-        <div class="subone">
-
-            <img alt={{res.name}} width="254" height="160" src="https://www.seriouseats.com/images/2015/06/20150602-five-grilled-chickens-01.JPG">
-            <br><label #resname>{{res.name}}</label><br>
-            <!-- <app-restaurantdetails [resdetail]="resname" routerLink='/restaurant/restaurantdetails'></app-restaurantdetails> -->
-            <button [resdetail]="resname" mat-raised-button color="warn" (click)="getdetails(resname)">Details</button>
-        </div>
+        <app-restaurantdetails (add)="addtocart($event)" [hotel]="res"></app-restaurantdetails>
     </div>
 </div>
 

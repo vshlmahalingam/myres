@@ -1,0 +1,104 @@
+.example-form {
+    width: 100%;
+    align-content: center;
+    display: inline-block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.example-full-width {
+    width: 50%;
+    border: 1px solid gray;
+}
+
+._3eNnq {
+    width: 860px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+._38pEg {
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+    border: 1px solid #d4d5d9;
+    border-radius: 3px;
+}
+
+._1F77L,
+._2Tyn1 {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+._2BJMh {
+    border: 0;
+    font-size: 20px;
+    color: #282c3f;
+    font-weight: 500;
+    padding: 20px 60px 20px 78px;
+    margin: 0;
+    width: 100%;
+    outline: none;
+    height: 68px;
+    line-height: 1.3em;
+    caret-color: #fc8019;
+    text-transform: capitalize;
+}
+
+._2Tyn1 {
+    background-color: transparent;
+    border: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    right: -90px;
+    text-align: center;
+    cursor: pointer;
+}
+
+._3pIVC {
+    font-size: 30px;
+    color: #282c3f;
+    margin-bottom: 9px;
+}
+
+.searchcontent {
+    width: 100%;
+    align-content: center;
+    display: inline-block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.searchtext {
+    width: 50%;
+    display: inline-block;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #282c3f;
+    font-weight: 500;
+    height: 70px;
+}
+
+.searchbutton {
+    background-color: transparent;
+    border: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    right: -90px;
+    text-align: center;
+    cursor: pointer;
+}

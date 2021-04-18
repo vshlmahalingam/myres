@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { FeedbackRoutingModule } from './feedback-routing.module';
 import { FeedbackComponent } from './feedback.component';
+import { FeedbackquestionsComponent } from './feedbackquestions/feedbackquestions.component';
 
 
 @NgModule({
   declarations: [
-    FeedbackComponent
+    FeedbackComponent,
+    FeedbackquestionsComponent
   ],
   imports: [
     CommonModule,

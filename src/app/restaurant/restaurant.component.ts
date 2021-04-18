@@ -14,6 +14,11 @@ export class RestaurantComponent implements OnInit {
     alert(val);
 
   }
+
+  addtocart(data){
+    console.log(data +'welcome');
+
+  }
   getdetails(resname){
    // console.log(resname)
     this.router.navigate(['restaurant/restaurantdetails'], { state: { example: resname.innerText }});

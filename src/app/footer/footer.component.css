@@ -3,29 +3,26 @@
     text-align: end;
     position: relative;
     flex-direction: row-reverse;
-
-
 }
-#footerlist ul li{
+
+#footerlist ul li {
     list-style: none;
     margin-left: 0px;
     align-items: center;
     padding-right: 50px;
-
-
 }
 
-#footerlist1{
+#footerlist1 {
     text-align: center;
 }
 
-.footerheader{
+.footerheader {
     box-shadow: 0 15px 40px -20px rgb(40 44 63 / 15%);
     position: fixed;
     bottom: 0;
     left: 0;
-    height: 80px;
-    background: #fff;
+    /* height: 80px; */
+    /* background: #fff; */
     text-align: end;
-    
+    flex-grow: 2;
 }

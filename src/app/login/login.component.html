@@ -1,4 +1,4 @@
-
+<!-- 
 <label>
   UserName:
   <input type="text" placeholder="Username" [disabled]="disablelogin" #user (keyup)="onsavetext($event.target.value)"
@@ -20,4 +20,21 @@
 
 <ng-template #elseblock>
   <h1>{{fulname}}</h1>
-</ng-template>
+</ng-template> -->
+<div class="form">
+    <form #userForm="ngForm" (ngSubmit)="onlogin(userForm.value)">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input required #email="ngModel" type="email" email class="form-control" [ngModel]="test" name="useremail" placeholder="Enter email">
+            <span *ngIf="email.invalid && email.touched" class="error">Email is required</span>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input required minlength="3" #pass="ngModel" type="password" class="form-control" ngModel name="password" placeholder="Password">
+            <span *ngIf="pass.invalid && pass.touched" class="error">password is not valid</span>
+
+        </div>
+
+        <button [disabled]="userForm.invalid" type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

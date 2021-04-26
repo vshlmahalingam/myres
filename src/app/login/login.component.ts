@@ -13,6 +13,7 @@ export class LoginComponent implements OnInit {
 
   username= new FormControl('');
   showlogout=false;
+  test='test123@gmail.com'
   constructor(private router:Router) {}
   fulname='';
   disablelogin=false;
@@ -20,12 +21,15 @@ export class LoginComponent implements OnInit {
 
   }
 
+  onSubmit(data){
+    console.warn(data);
+  }
   onlogin(user:any)
   {
     this.disablelogin=true;
     this.showlogout=false;
     this.fulname=user;
-   // alert('Welcome ' + user);
+     console.warn(user);
 
     this.router.navigate(['/dashboard']);
 

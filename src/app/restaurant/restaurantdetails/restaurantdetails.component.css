@@ -1,16 +1,3 @@
-.MZy1T {
-    margin-bottom: 85px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between
-}
-
-.MZy1T:last-child {
-    margin-bottom: 0;
-    padding-bottom: 80px
-}
-
 .subone {
     width: 300px;
     float: left;
@@ -27,4 +14,20 @@
 
 .message {
     color: green;
+}
+
+.plusquantity {
+    height: 33px;
+    width: 40px;
+    border-top-left-radius: 6.5px;
+    border: 1px solid gainsboro;
+    border-bottom-left-radius: 6.5px;
+}
+
+.plusquantity {
+    height: 33px;
+    width: 40px;
+    border-top-right-radius: 6.5px;
+    border: 1px solid gainsboro;
+    border-bottom-right-radius: 6.5px;
 }

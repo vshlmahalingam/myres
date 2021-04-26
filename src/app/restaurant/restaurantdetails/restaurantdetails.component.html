@@ -1,10 +1,18 @@
 <div class="subone">
-
-    <img alt={{hotel.name}} width="254" height="160" src="https://www.seriouseats.com/images/2015/06/20150602-five-grilled-chickens-01.JPG">
-    <br><label #resname>{{hotel.name}}</label><br>
+    <img alt={{hotel.title}} width="254" height="160" src="assets/images/icecream.jpg">
+    <!-- <img alt={{hotel.name}} width="254" height="160" src="https://www.seriouseats.com/images/2015/06/20150602-five-grilled-chickens-01.JPG"> -->
+    <br><label title="{{hotel.title}}" style="width:50%; white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;" #resname>{{hotel.title}}</label><br>
     <!-- <app-restaurantdetails [resdetail]="resname" routerLink='/restaurant/restaurantdetails'></app-restaurantdetails> -->
-    <button (click)="onorderclick(resname)" mat-mini-fab color="accent" aria-label="Example icon button with a plus icon">
+    <!-- <button (click)="onorderclick(resname)" mat-mini-fab color="accent" aria-label="Example icon button with a plus icon">
         <mat-icon>Add to cart</mat-icon>
-    </button>
+    </button> -->
+    <div style="display: flex;">
+        <span><button class="btn-light shadow-none plusquantity" [hidden]="addfirst"  (click)="plus()">Add</button></span>
+        <span><button class="btn-light shadow-none plusquantity"  (click)="plus()"><i class="fa fa-plus"></i></button></span>
+        <span [hidden]="firsttext" style="width: 15%"><input [hidden]="firsttext" style=" height:'33px';background: rgb(247, 235, 236);;" type="text" readonly class="form-control" [ngModel]="inputnumber" ></span>
+        <span><button class="btn-light shadow-none plusquantity"  [hidden]="minushidden" (click)="minus()"><i class="fa fa-minus"></i></button></span>
+    </div>
     <!-- <button [resdetail]="resname" mat-raised-button color="warn" (click)="getdetails(resname)">Details</button> -->
 </div>

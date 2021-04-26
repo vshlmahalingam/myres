@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button'
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import {MatButtonModule} from '@angular/material/button'
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    BrowserAnimationsModule,MatButtonModule
+    BrowserAnimationsModule,MatButtonModule,HttpClientModule
     ],
   providers: [],
   bootstrap: [AppComponent]
